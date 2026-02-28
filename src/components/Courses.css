@@ -1,0 +1,147 @@
+/* ================= PAGE WRAPPER ================= */
+
+.courses {
+  background: #f1f5f9;
+  padding: 70px 0;
+}
+
+/* Center Container */
+.courses-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+  text-align: center;
+}
+
+/* ================= TITLE ================= */
+
+.course-title {
+  font-size: 36px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 10px;
+}
+
+.course-subtitle {
+  color: #6b7280;
+  font-size: 16px;
+  margin-bottom: 50px;
+}
+
+/* ================= GRID ================= */
+
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+
+/* ================= CARD ================= */
+
+.course-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ================= IMAGE AREA ================= */
+
+.image-box {
+  height: 140px;
+  background: #e5e7eb;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+
+.letter {
+  font-size: 50px;
+  color: #9ca3af;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Badge */
+/* .badge {
+  position: absolute;
+  top: 12px;
+  left: 12px;
+  background: #f4a300;
+  padding: 5px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+} */
+
+/* ================= CARD CONTENT ================= */
+
+.card-content {
+  padding: 18px;
+  text-align: left;
+}
+
+.card-content h3 {
+  font-size: 16px;
+  margin-bottom: 10px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Rating */
+.rating {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+  margin-bottom: 12px;
+}
+
+.star {
+  color: #f4a300;
+}
+
+.students {
+  color: #6b7280;
+}
+
+/* ================= PRICE ROW ================= */
+
+.price-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.price-row h4 {
+  font-size: 18px;
+}
+
+/* Buy Button */
+.buy-btn {
+  background: #f4a300;
+  border: none;
+  padding: 7px 12px;
+  border-radius: 8px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  font-size: 14px;
+}
+
+/* ================= SHOW MORE ================= */
+
+.show-more {
+  margin-top: 40px;
+  padding: 10px 25px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: white;
+  cursor: pointer;
+  font-size: 14px;
+}

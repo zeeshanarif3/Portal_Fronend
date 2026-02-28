@@ -1,0 +1,15 @@
+.dashboard-layout {
+  display: flex;
+  min-height: 100vh;
+}
+
+.sidebar {
+  width: 240px;
+  border-right: 1px solid #ddd;
+  padding: 20px;
+}
+
+.content-area {
+  flex: 1;
+  padding: 30px;
+}

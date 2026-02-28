@@ -1,0 +1,70 @@
+.hero {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 90px 100px;
+  /* background: #142d4c; */
+   background: #1b2a3a;
+  color: white;
+}
+
+.hero-left {
+  width: 50%;
+}
+
+/* .badge {
+  display: inline-block;
+  background: #2c3e50;
+  color: #f4a300;
+  padding: 8px 18px;
+  border-radius: 30px;
+  font-size: 14px;
+  margin-bottom: 30px;
+} */
+
+.hero h1 {
+  font-size: 55px;
+  line-height: 1.1;
+  margin-bottom: 25px;
+  font-family: 'Playfair Display', serif;
+}
+
+.hero h1 span {
+  color: #f4a300;
+}
+
+.hero-desc {
+  font-size: 18px;
+  color: #cbd5e1;
+  line-height: 1.6;
+  margin-bottom: 35px;
+  max-width: 520px;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 20px;
+}
+
+.primary-btn {
+  background: #f4a300;
+  border: none;
+  padding: 14px 28px;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.secondary-btn {
+  width: 180px;
+  background: #e5e7eb;
+  border: none;
+  border-radius: 8px;
+}
+
+.hero-right img {
+  width: 520px;
+  border-radius: 20px;
+  box-shadow: 0 20px 40px rgba(0,0,0,0.3);
+}

@@ -1,0 +1,137 @@
+/* Wrapper */
+.active-wrapper {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  background: #f5f6fa;
+}
+
+/* Top Header */
+.active-topbar {
+  background: #ffffff;
+  padding: 20px 30px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.active-topbar h2 {
+  margin: 0;
+  font-size: 22px;
+  font-weight: 600;
+}
+
+/* Content Area */
+.active-content {
+  padding: 30px;
+  flex: 1;
+}
+
+/* Search Box */
+.search-box {
+  position: relative;
+  margin-bottom: 30px;
+  max-width: 700px;        /* search chota */
+}
+
+.search-box input {
+  width: 100%;
+  padding: 12px 45px 12px 15px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  background: #ffffff;
+  font-size: 14px;
+  outline: none;
+  transition: 0.2s;
+}
+
+.search-box input:focus {
+  border-color: #6366f1;
+  box-shadow: 0 0 0 2px rgba(99, 102, 241, 0.1);
+}
+
+.search-box span {
+  position: absolute;
+  right: 15px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 16px;
+  cursor: pointer;
+}
+
+/* Grid Layout */
+.course-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+  gap: 24px;
+}
+
+/* Course Card */
+.course-card {
+  background: #ffffff;
+  border: 1px solid #e5e7eb;
+  border-radius: 12px;
+  overflow: hidden;
+  transition: 0.3s ease;
+}
+
+.course-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.06);
+}
+
+.course-card img {
+  width: 100%;
+  height: 180px;
+  object-fit: cover;
+}
+
+/* Card Content */
+.card-content {
+  padding: 18px;
+}
+
+.card-content h4 {
+  margin: 0 0 6px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.card-content p {
+  margin: 0 0 12px 0;
+  font-size: 14px;
+  color: #6b7280;
+}
+
+/* Progress Bar */
+.progress-bar {
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  margin-bottom: 12px;
+}
+
+.progress {
+  height: 100%;
+  background: #6366f1;
+  border-radius: 10px;
+}
+
+/* Button */
+.start-btn {
+  background: #6366f1;
+  color: #ffffff;
+  padding: 8px 16px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s;
+}
+
+.start-btn:hover {
+  background: #4f46e5;
+}
+
+.completed {
+  font-size: 13px;
+  color: #6366f1;
+}

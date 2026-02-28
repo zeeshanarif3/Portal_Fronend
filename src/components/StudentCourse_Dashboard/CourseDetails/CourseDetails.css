@@ -1,0 +1,64 @@
+.course-details-wrapper {
+  padding: 30px;
+  background: #f5f6fa;
+  min-height: 100vh;
+}
+
+/* Main Card */
+.course-details-card {
+  background: #ffffff;
+  border-radius: 16px;
+  padding: 40px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.05);
+}
+
+/* LEFT SIDE */
+.details-left {
+  flex: 1;
+}
+
+.details-left h2 {
+  font-size: 26px;
+  font-weight: 600;
+  margin-bottom: 20px;
+}
+
+/* Meta Info */
+.details-meta p {
+  font-size: 15px;
+  margin-bottom: 10px;
+  color: #374151;
+}
+
+/* Button */
+.start-quiz-btn {
+  margin-top: 20px;
+  background: #1e3a8a;
+  color: white;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  font-size: 14px;
+  transition: 0.2s ease;
+}
+
+.start-quiz-btn:hover {
+  background: #1d4ed8;
+}
+
+/* RIGHT SIDE IMAGE */
+.details-right {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+}
+
+.details-right img {
+  max-width: 100%;
+  height: auto;
+}

@@ -1,0 +1,111 @@
+.sc-sidebar {
+  width: 280px;
+  height: 100vh;
+  background: #f3f4f6;
+  border-right: 1px solid #e5e7eb;
+  display: flex;
+  flex-direction: column;
+  font-family: Arial, sans-serif;
+}
+
+/* ===== FIXED TOP ===== */
+.sc-fixed {
+  padding: 15px;
+  border-bottom: 1px solid #e5e7eb;
+  background: #f3f4f6;
+}
+
+.sc-top {
+  font-size: 18px;
+  cursor: pointer;
+  margin-bottom: 15px;
+}
+
+.back-icon {
+  cursor: pointer;
+}
+
+/* Progress */
+.sc-progress {
+  margin-bottom: 15px;
+}
+
+.progress-bar {
+  height: 6px;
+  background: #e5e7eb;
+  border-radius: 10px;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: #6366f1;
+  border-radius: 10px;
+}
+
+.sc-progress p {
+  font-size: 13px;
+  color: #374151;
+}
+
+/* Course Details */
+.sc-discussion {
+  font-size: 14px;
+  font-weight: 600;
+  padding: 8px 0;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* ===== SCROLLABLE SECTION ===== */
+.sc-scroll {
+  flex: 1;
+  overflow-y: auto;
+  padding: 10px 15px;
+}
+
+/* Sections */
+.sc-section {
+  margin-bottom: 8px;
+}
+
+.sc-section-title {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 5px;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+.sc-section-title:hover {
+  background: #e5e7eb;
+}
+
+/* Sub Items */
+.sc-subitems {
+  padding-left: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.sc-link {
+  text-decoration: none;
+  font-size: 13px;
+  padding: 6px 0;
+  color: #374151;
+}
+
+.sc-link:hover {
+  color: #4f46e5;
+}
+
+/* Scrollbar Styling */
+.sc-scroll::-webkit-scrollbar {
+  width: 6px;
+}
+
+.sc-scroll::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
+}

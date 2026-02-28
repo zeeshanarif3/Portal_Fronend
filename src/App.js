@@ -1,24 +1,57 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { Navigate } from "react-router-dom";
+import HomeLandingPage from "./components/Landing_Page/HomeLandingPage";
+import Layout from "./components/Student Dashboard/Dashboardlayout/Layout";
+import ActiveCourses from "./components/Student Dashboard/ActiveCourses";
+import CourseSidebar from "./components/StudentCourse_Dashboard/CourseSidebar";
+import CourseDetails from "./components/StudentCourse_Dashboard/CourseDetails/CourseDetails";
+import StudentCourseLayout from "./components/StudentCourse_Dashboard/StudentCourseLayoutdet";
+import Quiz from "./components/StudentCourse_Dashboard/Quiz/Quiz";
+
+import "./App.css"
+
 
 function App() {
+  
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    // <BrowserRouter>
+      <Routes>
+
+        {/* Landing Page */}
+        <Route path="/" element={<HomeLandingPage />} />
+
+        {/* Dashboard */}
+        <Route path="/dashboard" element={<Layout />}>
+          <Route path="active" element={<ActiveCourses />} />
+        </Route>
+
+  {/* <Route path="/course" element={<CourseSidebar />}>
+  <Route path="instructions" element={<CourseDetails />} />
+  </Route> */}
+
+{/* <Route path="/course" element={<CourseSidebar />}>
+  <Route index element={<CourseDetails />} />
+   <Route path="details" element={<CourseDetails />} />
+</Route> */}
+
+
+<Route path="/course" element={<StudentCourseLayout />}>
+
+  {/* Auto open details */}
+  <Route index element={<Navigate to="details" />} />
+
+  <Route path="details" element={<CourseDetails />} />
+  <Route path="details/quiz" element={<Quiz />} />
+
+</Route>
+
+  {/* <Route path="quant" element={<Quant />} />
+  <Route path="reasoning" element={<Reasoning />} /> */}
+
+
+      </Routes>
+    // </BrowserRouter>
   );
 }
 

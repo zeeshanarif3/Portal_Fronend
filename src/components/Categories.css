@@ -1,0 +1,92 @@
+.categories {
+  padding: 100px 120px;
+  text-align: center;
+  background: #f8fafc;
+}
+
+/* Title */
+.category-title {
+  font-size: 42px;
+  font-family: 'Playfair Display', serif;
+  margin-bottom: 15px;
+}
+
+/* Subtitle */
+.category-subtitle {
+  color: #6b7280;
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+/* Cards Container */
+.card-container {
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+}
+
+/* Individual Card */
+.category-card {
+  background: white;
+  padding: 40px;
+  width: 360px;
+  border-radius: 16px;
+  text-align: left;
+  border: 1px solid #e5e7eb;
+  transition: all 0.3s ease;
+}
+
+.category-card:hover {
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  transform: translateY(-6px);
+}
+
+/* Icon Box */
+.icon-box {
+  width: 55px;
+  height: 55px;
+  border-radius: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 25px;
+  font-size: 22px;
+}
+
+/* Different Colors */
+.coding {
+  background: #fff4e5;
+  color: #f4a300;
+}
+
+.aptitude {
+  background: #e6f7ef;
+  color: #22c55e;
+}
+
+.reasoning {
+  background: #eef2ff;
+  color: #6366f1;
+}
+
+/* Card Title */
+.category-card h3 {
+  font-size: 22px;
+  margin-bottom: 15px;
+  font-family: 'Playfair Display', serif;
+}
+
+/* Card Text */
+.category-card p {
+  color: #6b7280;
+  font-size: 15px;
+  line-height: 1.6;
+  margin-bottom: 25px;
+}
+
+/* Get Started */
+.get-started {
+  color: #f4a300;
+  font-weight: 600;
+  cursor: pointer;
+}
