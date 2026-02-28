@@ -49,10 +49,10 @@ export default function StudentCourseSidebar() {
                 <div className="sc-section">
                     <div
                         className="sc-section-title"
-                        onClick={() => toggleSection("instructions")}
+                        onClick={() => toggleSection("tableofcontent")}
                     >
-                        {openSection === "instructions" ? <FaChevronDown /> : <FaChevronRight />}
-                        Instructions
+                        {openSection === "tableofcontent" ? <FaChevronDown /> : <FaChevronRight />}
+                        Table Of Content
                     </div>
                 </div>
 
@@ -76,13 +76,13 @@ export default function StudentCourseSidebar() {
                 <div className="sc-section">
                     <div
                         className="sc-section-title"
-                        onClick={() => toggleSection("tcs")}
+                        onClick={() => toggleSection("reasoning")}
                     >
-                        {openSection === "tcs" ? <FaChevronDown /> : <FaChevronRight />}
-                        TCS (Mock)
+                        {openSection === "reasoning" ? <FaChevronDown /> : <FaChevronRight />}
+                        Reasoning (Mock)
                     </div>
 
-                    {openSection === "tcs" && (
+                    {openSection === "reasoning" && (
                         <div className="sc-subitems">
                             <NavLink to="#" className="sc-link">Mock 1</NavLink>
                             <NavLink to="#" className="sc-link">Mock 2</NavLink>
@@ -94,13 +94,13 @@ export default function StudentCourseSidebar() {
                 <div className="sc-section">
                     <div
                         className="sc-section-title"
-                        onClick={() => toggleSection("wipro")}
+                        onClick={() => toggleSection("verbal")}
                     >
-                        {openSection === "wipro" ? <FaChevronDown /> : <FaChevronRight />}
-                        Wipro (Mock)
+                        {openSection === "verbal" ? <FaChevronDown /> : <FaChevronRight />}
+                        Verbal (Mock)
                     </div>
 
-                    {openSection === "wipro" && (
+                    {openSection === "verbal" && (
                         <div className="sc-subitems">
                             <NavLink to="#" className="sc-link">Mock 1</NavLink>
                             <NavLink to="#" className="sc-link">Mock 2</NavLink>
@@ -111,13 +111,13 @@ export default function StudentCourseSidebar() {
                 <div className="sc-section">
                     <div
                         className="sc-section-title"
-                        onClick={() => toggleSection("infosys")}
+                        onClick={() => toggleSection("readingpara")}
                     >
-                        {openSection === "infosys" ? <FaChevronDown /> : <FaChevronRight />}
-                        Infosys (Mock)
+                        {openSection === "readingpara" ? <FaChevronDown /> : <FaChevronRight />}
+                        Reading Paragraph
                     </div>
 
-                    {openSection === "infosys" && (
+                    {openSection === "readingpara" && (
                         <div className="sc-subitems">
                             <NavLink to="#" className="sc-link">Mock 1</NavLink>
                             <NavLink to="#" className="sc-link">Mock 2</NavLink>
@@ -130,13 +130,13 @@ export default function StudentCourseSidebar() {
                 <div className="sc-section">
                     <div
                         className="sc-section-title"
-                        onClick={() => toggleSection("accenture")}
+                        onClick={() => toggleSection("numericpuzzles")}
                     >
-                        {openSection === "accenture" ? <FaChevronDown /> : <FaChevronRight />}
-                        Accenture (Mock)
+                        {openSection === "numericpuzzles" ? <FaChevronDown /> : <FaChevronRight />}
+                        Numeric Puzzles
                     </div>
 
-                    {openSection === "accenture" && (
+                    {openSection === "numericpuzzles" && (
                         <div className="sc-subitems">
                             <NavLink to="#" className="sc-link">Mock 1</NavLink>
                             <NavLink to="#" className="sc-link">Mock 2</NavLink>
@@ -149,13 +149,13 @@ export default function StudentCourseSidebar() {
                 <div className="sc-section">
                     <div
                         className="sc-section-title"
-                        onClick={() => toggleSection("capgemini")}
+                        onClick={() => toggleSection("gamebased")}
                     >
-                        {openSection === "capgemini" ? <FaChevronDown /> : <FaChevronRight />}
-                        Capgemini (Mock)
+                        {openSection === "gamebased" ? <FaChevronDown /> : <FaChevronRight />}
+                        Game Based Mock
                     </div>
 
-                    {openSection === "capgemini" && (
+                    {openSection === "gamebased" && (
                         <div className="sc-subitems">
                             <NavLink to="#" className="sc-link">Mock 1</NavLink>
                             <NavLink to="#" className="sc-link">Mock 2</NavLink>
@@ -168,13 +168,13 @@ export default function StudentCourseSidebar() {
                 <div className="sc-section">
                     <div
                         className="sc-section-title"
-                        onClick={() => toggleSection("cognizant")}
+                        onClick={() => toggleSection("pseudocodes")}
                     >
-                        {openSection === "cognizant" ? <FaChevronDown /> : <FaChevronRight />}
-                        Cognizant (Mock)
+                        {openSection === "pseudocodes" ? <FaChevronDown /> : <FaChevronRight />}
+                        Pseudocodes
                     </div>
 
-                    {openSection === "cognizant" && (
+                    {openSection === "pseudocodes" && (
                         <div className="sc-subitems">
                             <NavLink to="#" className="sc-link">Mock 1</NavLink>
                             <NavLink to="#" className="sc-link">Mock 2</NavLink>
@@ -187,13 +187,13 @@ export default function StudentCourseSidebar() {
                 <div className="sc-section">
                     <div
                         className="sc-section-title"
-                        onClick={() => toggleSection("deloitte")}
+                        onClick={() => toggleSection("dsa")}
                     >
-                        {openSection === "deloitte" ? <FaChevronDown /> : <FaChevronRight />}
-                        Deloitte (Mock)
+                        {openSection === "dsa" ? <FaChevronDown /> : <FaChevronRight />}
+                        DSA Mock
                     </div>
 
-                    {openSection === "deloitte" && (
+                    {openSection === "dsa" && (
                         <div className="sc-subitems">
                             <NavLink to="#" className="sc-link">Mock 1</NavLink>
                             <NavLink to="#" className="sc-link">Mock 2</NavLink>
@@ -206,13 +206,13 @@ export default function StudentCourseSidebar() {
                 <div className="sc-section">
                     <div
                         className="sc-section-title"
-                        onClick={() => toggleSection("hcl")}
+                        onClick={() => toggleSection("csfundamental")}
                     >
-                        {openSection === "hcl" ? <FaChevronDown /> : <FaChevronRight />}
-                        HCL (Mock)
+                        {openSection === "csfundamental" ? <FaChevronDown /> : <FaChevronRight />}
+                        CS Fundamentals
                     </div>
 
-                    {openSection === "hcl" && (
+                    {openSection === "csfundamental" && (
                         <div className="sc-subitems">
                             <NavLink to="#" className="sc-link">Mock 1</NavLink>
                             <NavLink to="#" className="sc-link">Mock 2</NavLink>
@@ -225,13 +225,13 @@ export default function StudentCourseSidebar() {
                 <div className="sc-section">
                     <div
                         className="sc-section-title"
-                        onClick={() => toggleSection("techmahindra")}
+                        onClick={() => toggleSection("SQL")}
                     >
-                        {openSection === "techmahindra" ? <FaChevronDown /> : <FaChevronRight />}
-                        Tech Mahindra (Mock)
+                        {openSection === "SQL" ? <FaChevronDown /> : <FaChevronRight />}
+                        SQL
                     </div>
 
-                    {openSection === "techmahindra" && (
+                    {openSection === "SQL" && (
                         <div className="sc-subitems">
                             <NavLink to="#" className="sc-link">Mock 1</NavLink>
                             <NavLink to="#" className="sc-link">Mock 2</NavLink>
@@ -244,13 +244,30 @@ export default function StudentCourseSidebar() {
                 <div className="sc-section">
                     <div
                         className="sc-section-title"
-                        onClick={() => toggleSection("verbal")}
+                        onClick={() => toggleSection("webdev")}
                     >
-                        {openSection === "verbal" ? <FaChevronDown /> : <FaChevronRight />}
-                        Verbal (Mock)
+                        {openSection === "webdev" ? <FaChevronDown /> : <FaChevronRight />}
+                        Web Development
                     </div>
 
-                    {openSection === "verbal" && (
+                    {openSection === "webdev" && (
+                        <div className="sc-subitems">
+                            <NavLink to="#" className="sc-link">Part A</NavLink>
+                            <NavLink to="#" className="sc-link">Part B</NavLink>
+                        </div>
+                    )}
+                </div>
+
+                    <div className="sc-section">
+                    <div
+                        className="sc-section-title"
+                        onClick={() => toggleSection("codingques")}
+                    >
+                        {openSection === "codingques" ? <FaChevronDown /> : <FaChevronRight />}
+                        Coding Questions
+                    </div>
+
+                    {openSection === "codingques" && (
                         <div className="sc-subitems">
                             <NavLink to="#" className="sc-link">Part A</NavLink>
                             <NavLink to="#" className="sc-link">Part B</NavLink>
@@ -260,10 +277,10 @@ export default function StudentCourseSidebar() {
 
 
                 {/* Static Items Example */}
-                <div className="sc-section-title">Reading Paragraph</div>
+                {/* <div className="sc-section-title">Reading Paragraph</div>
                 <div className="sc-section-title">Numeric Puzzles</div>
                 <div className="sc-section-title">Gamified Assessment</div>
-                <div className="sc-section-title">Pseudocodes</div>
+                <div className="sc-section-title">Pseudocodes</div> */}
 
             </div>
         </div>
