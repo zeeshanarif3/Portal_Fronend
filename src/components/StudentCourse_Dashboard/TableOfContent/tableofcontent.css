@@ -1,0 +1,46 @@
+.toc-wrapper {
+  padding: 30px;
+  background: #f3f4f6;
+  min-height: 100%;
+}
+
+/* Image */
+.toc-image {
+  text-align: center;
+  margin-bottom: 25px;
+}
+
+.toc-image img {
+  width: 100%;
+  max-width: 900px;
+  border-radius: 8px;
+}
+
+/* Content Box */
+.toc-box {
+  background: white;
+  padding: 25px;
+  border-radius: 10px;
+  max-width: 800px;
+  margin: auto;
+}
+
+.toc-box h2 {
+  margin-bottom: 20px;
+}
+
+.toc-box ul {
+  list-style: none;
+  padding: 0;
+}
+
+.toc-box li {
+  padding: 12px;
+  border-bottom: 1px solid #e5e7eb;
+  cursor: pointer;
+  transition: 0.2s ease;
+}
+
+.toc-box li:hover {
+  background: #f9fafb;
+}

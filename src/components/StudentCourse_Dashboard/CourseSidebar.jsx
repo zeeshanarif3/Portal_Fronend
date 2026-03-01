@@ -13,10 +13,11 @@ export default function StudentCourseSidebar() {
         setOpenSection(openSection === section ? null : section);
     };
 
+    
 
-    const goToDetails = () => {
-        navigate("/course/details");
-    };
+    // const goToDetails = () => {
+    //     navigate("/course/details");
+    // };
 
 
     return (
@@ -26,7 +27,9 @@ export default function StudentCourseSidebar() {
             <div className="sc-fixed">
 
                 <div className="sc-top">
-                    <FaArrowLeft className="back-icon" />
+                    <FaArrowLeft className="back-icon" 
+                    onClick={() => navigate("/dashboard/active")}
+                    />
                 </div>
 
                 <div className="sc-progress">
@@ -36,7 +39,7 @@ export default function StudentCourseSidebar() {
                     <p>2% completed in 2h 53m</p>
                 </div>
 
-                <div className="sc-discussion" onClick={goToDetails}>
+                <div className="sc-discussion">
                     💬 Course Details
                 </div>
 
@@ -51,9 +54,16 @@ export default function StudentCourseSidebar() {
                         className="sc-section-title"
                         onClick={() => toggleSection("tableofcontent")}
                     >
-                        {openSection === "tableofcontent" ? <FaChevronDown /> : <FaChevronRight />}
-                        Table Of Content
+                        {openSection === "quant" ? <FaChevronDown /> : <FaChevronRight />}
+                        Table of Content
                     </div>
+
+                    {openSection === "tableofcontent" && (
+                        <div className="sc-subitems">
+                            <NavLink to="table-of-content" className="sc-link">Total Questions & content</NavLink>
+                            {/* <NavLink to="#" className="sc-link">Mock 2</NavLink> */}
+                        </div>
+                    )}
                 </div>
 
                 {/* Quant */}
@@ -68,7 +78,7 @@ export default function StudentCourseSidebar() {
 
                     {openSection === "quant" && (
                         <div className="sc-subitems">
-                            <NavLink to="#" className="sc-link">Mock 1</NavLink>
+                            <NavLink to="pdf-view" className="sc-link">Mock 1</NavLink>
                             <NavLink to="#" className="sc-link">Mock 2</NavLink>
                         </div>
                     )}
@@ -84,7 +94,7 @@ export default function StudentCourseSidebar() {
 
                     {openSection === "reasoning" && (
                         <div className="sc-subitems">
-                            <NavLink to="#" className="sc-link">Mock 1</NavLink>
+                            <NavLink to="details" className="sc-link">Mock 1</NavLink>
                             <NavLink to="#" className="sc-link">Mock 2</NavLink>
                         </div>
                     )}
@@ -258,7 +268,7 @@ export default function StudentCourseSidebar() {
                     )}
                 </div>
 
-                    <div className="sc-section">
+                <div className="sc-section">
                     <div
                         className="sc-section-title"
                         onClick={() => toggleSection("codingques")}
