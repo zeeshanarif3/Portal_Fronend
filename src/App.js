@@ -8,6 +8,8 @@ import CourseSidebar from "./components/StudentCourse_Dashboard/CourseSidebar";
 import CourseDetails from "./components/StudentCourse_Dashboard/CourseDetails/CourseDetails";
 import StudentCourseLayout from "./components/StudentCourse_Dashboard/StudentCourseLayoutdet";
 import Quiz from "./components/StudentCourse_Dashboard/Quiz/Quiz";
+import PdfViewer from "./components/StudentCourse_Dashboard/PDFPage/Pdfviewers";
+import TableOfContent from "./components/StudentCourse_Dashboard/TableOfContent/tableofcontent";
 
 import "./App.css"
 
@@ -39,10 +41,13 @@ function App() {
 <Route path="/course" element={<StudentCourseLayout />}>
 
   {/* Auto open details */}
-  <Route index element={<Navigate to="details" />} />
+   <Route index element={<Navigate to="table-of-content" />} />
+   <Route path="table-of-content" element={<TableOfContent />} />
+  {/* <Route index element={<Navigate to="details" />} /> */}
 
-  <Route path="details" element={<CourseDetails />} />
+ <Route path="details" element={<CourseDetails />} />
   <Route path="details/quiz" element={<Quiz />} />
+  <Route path="pdf-view" element={<PdfViewer />} />
 
 </Route>
 
