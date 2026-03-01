@@ -49,7 +49,10 @@ function Navbar() {
           <a href="#">Courses</a>
           <a href="#">All Companies</a>
            {/* <a href="#">Active Courses</a> */}
-            <Link to="/dashboard/active">Active Courses</Link>
+            {/* <Link to="/dashboard/active">Active Courses</Link> */}
+
+            <Link to="#">Active Courses</Link>
+
         </nav>
 
         {/* Right Side */}
