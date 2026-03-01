@@ -5,6 +5,7 @@ import Courses from "../Courses";
 import WhyChooseUs from "../WhyChooseUs";
 import Testimonials from "../Testimonials";
 import Footer from "../Footer";
+import AboutFounder from "../foundermeet";
 
 export default function HomeLandingPage() {
   return (
@@ -15,6 +16,7 @@ export default function HomeLandingPage() {
       <Courses />
       <WhyChooseUs />
       <Testimonials />
+      <AboutFounder />
       <Footer />
     </>
   );
