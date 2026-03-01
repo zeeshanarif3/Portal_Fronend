@@ -1,46 +1,58 @@
 .toc-wrapper {
-  padding: 30px;
+  padding: 40px;
   background: #f3f4f6;
-  min-height: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-/* Image */
+/* ===== IMAGE SECTION ===== */
 .toc-image {
-  text-align: center;
-  margin-bottom: 25px;
+  width: 100%;
+  max-width: 1000px;
+  margin-bottom: 30px;
 }
 
 .toc-image img {
   width: 100%;
-  max-width: 900px;
-  border-radius: 8px;
+  border-radius: 10px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  object-fit: cover;
 }
 
-/* Content Box */
+/* ===== CONTENT BOX ===== */
 .toc-box {
+  width: 100%;
+  max-width: 850px;
   background: white;
-  padding: 25px;
-  border-radius: 10px;
-  max-width: 800px;
-  margin: auto;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.08);
 }
 
 .toc-box h2 {
   margin-bottom: 20px;
+  font-size: 22px;
+  font-weight: 600;
+  color: #111827;
 }
 
 .toc-box ul {
   list-style: none;
   padding: 0;
+  margin: 0;
 }
 
 .toc-box li {
-  padding: 12px;
+  padding: 14px 10px;
   border-bottom: 1px solid #e5e7eb;
   cursor: pointer;
-  transition: 0.2s ease;
+  transition: all 0.2s ease;
+  font-weight: 500;
 }
 
 .toc-box li:hover {
   background: #f9fafb;
+  padding-left: 15px;
 }
