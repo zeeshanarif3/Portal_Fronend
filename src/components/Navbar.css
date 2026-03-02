@@ -1,39 +1,10 @@
-/* .navbar {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  padding: 18px 100px;
-  background: white;
-}
-
-.logo {
-  font-size: 22px;
-  font-weight: 700;
-  color: #f4a300;
-}
-
-.nav-links a {
-  margin: 0 18px;
-  text-decoration: none;
-  color: #6b7280;
-  font-weight: 500;
-}
-
-.signin-btn {
-  background: #1e293b;
-  color: white;
-  padding: 10px 20px;
-  border-radius: 8px;
-  border: none;
-  cursor: pointer;
-}
- */
-
-
- /* NAVBAR */
+/* NAVBAR */
 .navbar {
   background: white;
   border-bottom: 1px solid #e5e7eb;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
 }
 
 .nav-container {
@@ -43,6 +14,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  position: relative;
 }
 
 /* LOGO */
@@ -55,13 +27,13 @@
 
 .logo-icon {
   font-size: 28px;
-  color: #f4a300;   /* yellow icon */
+  color: #f4a300;
 }
 
 .logo-text {
   font-size: 22px;
   font-weight: 700;
-  color: #1f2937;   /* dark text */
+  color: #1f2937;
   font-family: 'Playfair Display', serif;
 }
 
@@ -115,4 +87,43 @@
   border-radius: 8px;
   border: none;
   cursor: pointer;
+}
+
+/* HAMBURGER */
+.menu-icon {
+  display: none;
+  font-size: 22px;
+  cursor: pointer;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet & Mobile */
+@media (max-width: 992px) {
+
+  .menu-icon {
+    display: block;
+  }
+
+  .nav-links {
+    position: absolute;
+    top: 70px;
+    right: 0;
+    background: white;
+    width: 220px;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 10px 25px rgba(0,0,0,0.1);
+    display: none;
+  }
+
+  .nav-links.active {
+    display: flex;
+  }
+
+  .nav-right {
+    display: none;
+  }
 }
