@@ -2,14 +2,13 @@
 
 .why-section {
   background: #fdfefe;
-  padding: 80px 0;
+  padding: 90px 20px;
 }
 
 /* Center container */
 .why-container {
-  max-width: 1000px;
+  max-width: 1100px;
   margin: 0 auto;
-  padding: 0 20px;
   text-align: center;
 }
 
@@ -25,6 +24,9 @@
   color: #6b7280;
   font-size: 16px;
   margin-bottom: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Grid */
@@ -46,6 +48,7 @@
   justify-content: center;
   font-weight: 500;
   transition: 0.3s ease;
+  text-align: center;
 }
 
 .why-card:hover {
@@ -57,4 +60,53 @@
 .check-icon {
   color: #22c55e;
   font-size: 18px;
+  flex-shrink: 0;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .why-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .why-title {
+    font-size: 32px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .why-section {
+    padding: 70px 20px;
+  }
+
+  .why-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .why-title {
+    font-size: 26px;
+  }
+
+  .why-subtitle {
+    font-size: 14px;
+    margin-bottom: 35px;
+  }
+
+  .why-card {
+    padding: 16px;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .why-title {
+    font-size: 22px;
+  }
+
+  .why-card {
+    font-size: 14px;
+  }
 }

@@ -1,7 +1,14 @@
+/* ================= CATEGORIES SECTION ================= */
+
 .categories {
-  padding: 100px 120px;
-  text-align: center;
   background: #f8fafc;
+  padding: 100px 20px; /* fixed horizontal padding issue */
+}
+
+.categories-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
 }
 
 /* Title */
@@ -16,12 +23,15 @@
   color: #6b7280;
   font-size: 18px;
   margin-bottom: 60px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* Cards Container */
 .card-container {
-  display: flex;
-  justify-content: center;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
   gap: 40px;
 }
 
@@ -29,7 +39,6 @@
 .category-card {
   background: white;
   padding: 40px;
-  width: 360px;
   border-radius: 16px;
   text-align: left;
   border: 1px solid #e5e7eb;
@@ -53,7 +62,7 @@
   font-size: 22px;
 }
 
-/* Different Colors */
+/* Colors */
 .coding {
   background: #fff4e5;
   color: #f4a300;
@@ -89,4 +98,61 @@
   color: #f4a300;
   font-weight: 600;
   cursor: pointer;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Tablet */
+@media (max-width: 992px) {
+  .card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .category-title {
+    font-size: 32px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .card-container {
+    grid-template-columns: 1fr;
+  }
+
+  .categories {
+    padding: 70px 20px;
+  }
+
+  .category-title {
+    font-size: 26px;
+  }
+
+  .category-subtitle {
+    font-size: 16px;
+  }
+
+  .category-card {
+    text-align: center;
+  }
+
+  .icon-box {
+    margin: 0 auto 20px auto;
+  }
+}
+
+/* Explore Button */
+.explore-btn {
+  margin-top: 50px;
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.explore-btn:hover {
+  background: #f8fafc;
 }

@@ -3,14 +3,13 @@
 .footer {
   background: #1b2a3a;
   color: #cbd5e1;
-  padding: 80px 0 40px;
+  padding: 80px 20px 40px;
 }
 
 /* Center Container */
 .footer-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
 }
 
 /* Grid */
@@ -37,6 +36,7 @@
   margin-bottom: 12px;
   cursor: pointer;
   transition: 0.3s;
+  font-size: 14px;
 }
 
 .footer-column li:hover {
@@ -63,6 +63,7 @@
   justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+  gap: 15px;
 }
 
 /* Logo */
@@ -70,7 +71,7 @@
   display: flex;
   align-items: center;
   gap: 8px;
-  color: #f4a300;
+  color: #f8f8f9;
   font-weight: 600;
 }
 
@@ -81,4 +82,55 @@
 .footer-bottom p {
   font-size: 14px;
   color: #94a3b8;
+  margin: 0;
+}
+
+/* ================= RESPONSIVE ================= */
+
+/* Large Tablet */
+@media (max-width: 992px) {
+  .footer-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 40px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .footer {
+    padding: 60px 20px 30px;
+  }
+
+  .footer-grid {
+    grid-template-columns: 1fr;
+    gap: 30px;
+  }
+
+  .footer-column {
+    text-align: center;
+  }
+
+  .contact-list li {
+    justify-content: center;
+  }
+
+  .footer-bottom {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+/* Small Mobile */
+@media (max-width: 480px) {
+  .footer-column h3 {
+    font-size: 16px;
+  }
+
+  .footer-column li {
+    font-size: 13px;
+  }
+
+  .footer-bottom p {
+    font-size: 12px;
+  }
 }

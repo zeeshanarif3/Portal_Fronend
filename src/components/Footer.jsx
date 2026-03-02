@@ -62,7 +62,7 @@ function Footer() {
         <div className="footer-bottom">
           <div className="footer-logo">
             <FaGraduationCap className="logo-icon" />
-            <span>PrepMaster</span>
+            <span>Prep Mars</span>
           </div>
 
           <p>

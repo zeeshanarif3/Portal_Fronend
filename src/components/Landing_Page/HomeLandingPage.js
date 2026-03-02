@@ -11,6 +11,7 @@ export default function HomeLandingPage() {
   return (
     <>
       <Navbar />
+       <div className="main-content">
       <Hero />
       <Categories />
       <Courses />
@@ -18,6 +19,7 @@ export default function HomeLandingPage() {
       <Testimonials />
       <AboutFounder />
       <Footer />
+      </div>
     </>
   );
 }

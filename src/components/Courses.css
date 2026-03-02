@@ -2,14 +2,13 @@
 
 .courses {
   background: #f1f5f9;
-  padding: 70px 0;
+  padding: 80px 20px;
 }
 
 /* Center Container */
 .courses-container {
   max-width: 1200px;
   margin: 0 auto;
-  padding: 0 20px;
   text-align: center;
 }
 
@@ -25,14 +24,18 @@
   color: #6b7280;
   font-size: 16px;
   margin-bottom: 50px;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 /* ================= GRID ================= */
 
+/* 🔥 AUTO RESPONSIVE GRID */
 .course-grid {
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 20px;
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+  gap: 25px;
 }
 
 /* ================= CARD ================= */
@@ -43,6 +46,9 @@
   overflow: hidden;
   border: 1px solid #e5e7eb;
   transition: all 0.3s ease;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .course-card:hover {
@@ -58,7 +64,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  position: relative;
 }
 
 .letter {
@@ -67,28 +72,18 @@
   font-family: 'Playfair Display', serif;
 }
 
-/* Badge */
-/* .badge {
-  position: absolute;
-  top: 12px;
-  left: 12px;
-  background: #f4a300;
-  padding: 5px 12px;
-  border-radius: 20px;
-  font-size: 12px;
-  font-weight: 600;
-} */
-
 /* ================= CARD CONTENT ================= */
 
 .card-content {
   padding: 18px;
   text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
 .card-content h3 {
   font-size: 16px;
-  margin-bottom: 10px;
   font-family: 'Playfair Display', serif;
 }
 
@@ -98,7 +93,6 @@
   align-items: center;
   gap: 6px;
   font-size: 14px;
-  margin-bottom: 12px;
 }
 
 .star {
@@ -115,6 +109,7 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-top: auto;
 }
 
 .price-row h4 {
@@ -125,23 +120,56 @@
 .buy-btn {
   background: #f4a300;
   border: none;
-  padding: 7px 12px;
+  padding: 8px 14px;
   border-radius: 8px;
   cursor: pointer;
   display: flex;
   align-items: center;
   gap: 6px;
   font-size: 14px;
+  transition: 0.3s;
+}
+
+.buy-btn:hover {
+  background: #d48d00;
 }
 
 /* ================= SHOW MORE ================= */
 
 .show-more {
-  margin-top: 40px;
+  margin-top: 50px;
   padding: 10px 25px;
   border-radius: 8px;
   border: 1px solid #d1d5db;
   background: white;
   cursor: pointer;
   font-size: 14px;
+  transition: 0.3s;
+}
+
+.show-more:hover {
+  background: #f8fafc;
+}
+
+/* ================= MOBILE TWEAK ================= */
+
+@media (max-width: 768px) {
+  .course-title {
+    font-size: 26px;
+  }
+
+  .course-subtitle {
+    font-size: 14px;
+  }
+
+  .price-row {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .buy-btn {
+    width: 100%;
+    justify-content: center;
+  }
 }

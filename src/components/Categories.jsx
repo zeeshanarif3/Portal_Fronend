@@ -5,57 +5,72 @@ import { FaCode, FaBrain, FaLightbulb } from "react-icons/fa";
 function Categories() {
   return (
     <section className="categories">
-      <h2 className="category-title">Mock Test Categories</h2>
+      <div className="categories-container">
 
-      <p className="category-subtitle">
-        Prepare with industry-standard mock tests designed by experts from top companies.
-      </p>
+        {/* Section Title */}
+        <h2 className="category-title">Mock Test Categories</h2>
 
-      <div className="card-container">
-        {/* Card 1 */}
-        <div className="category-card">
-          <div className="icon-box coding">
-            <FaCode />
+        <p className="category-subtitle">
+          Prepare with industry-standard mock tests designed by experts 
+          from top companies.
+        </p>
+
+        {/* Cards */}
+        <div className="card-container">
+
+          {/* Card 1 */}
+          <div className="category-card">
+            <div className="icon-box coding">
+              <FaCode />
+            </div>
+
+            <h3>Coding Mock Test</h3>
+
+            <p>
+              Practice company-level coding questions with real exam patterns.
+              Timed challenges across DSA, OOP, and system design.
+            </p>
+
+            <span className="get-started">Get Started →</span>
           </div>
 
-          <h3>Coding Mock Test</h3>
-          <p>
-            Practice company-level coding questions with real exam patterns.
-            Timed challenges across DSA, OOP, and system design.
-          </p>
+          {/* Card 2 */}
+          <div className="category-card">
+            <div className="icon-box aptitude">
+              <FaBrain />
+            </div>
 
-          <span className="get-started">Get Started →</span>
-        </div>
+            <h3>Aptitude Mock Test</h3>
 
-        {/* Card 2 */}
-        <div className="category-card">
-          <div className="icon-box aptitude">
-            <FaBrain />
+            <p>
+              Improve quantitative and logical aptitude with timed tests.
+              Covers number systems, probability, permutations & more.
+            </p>
+
+            <span className="get-started">Get Started →</span>
           </div>
 
-          <h3>Aptitude Mock Test</h3>
-          <p>
-            Improve quantitative and logical aptitude with timed tests.
-            Covers number systems, probability, permutations & more.
-          </p>
+          {/* Card 3 */}
+          <div className="category-card">
+            <div className="icon-box reasoning">
+              <FaLightbulb />
+            </div>
 
-          <span className="get-started">Get Started →</span>
-        </div>
+            <h3>Reasoning Mock Test</h3>
 
-        {/* Card 3 */}
-        <div className="category-card">
-          <div className="icon-box reasoning">
-            <FaLightbulb />
+            <p>
+              Master reasoning topics asked in top placement exams.
+              Logical, verbal & analytical reasoning with detailed solutions.
+            </p>
+
+            <span className="get-started">Get Started →</span>
           </div>
+          
 
-          <h3>Reasoning Mock Test</h3>
-          <p>
-            Master reasoning topics asked in top placement exams.
-            Logical, verbal & analytical reasoning with detailed solutions.
-          </p>
-
-          <span className="get-started">Get Started →</span>
         </div>
+              <button className="explore-btn">
+          Explore More Tests
+        </button>
       </div>
     </section>
   );

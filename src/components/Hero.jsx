@@ -4,33 +4,42 @@ import "./Hero.css";
 function Hero() {
   return (
     <section className="hero">
-      <div className="hero-left">
-        <div className="badge">Trusted by 10,000+ Students</div>
+      <div className="hero-container">
+        
+        {/* LEFT CONTENT */}
+        <div className="hero-left">
+          <div className="badge">Trusted by 10,000+ Students</div>
 
-        <h1>
-          Your Gateway to <br />
-          <span>Professional Success:</span> <br />
-          Crack Jobs
-        </h1>
+          <h1>
+            Your Gateway to <br />
+            <span>Professional Success:</span> <br />
+            Crack Jobs
+          </h1>
 
-        <p className="hero-desc">
-          With Over 5 Years of Experience, Your Trusted Partner in Placements.
-          Master coding, aptitude, and reasoning with expert-curated content.
-        </p>
+          <p className="hero-desc">
+            With over 5 years of experience, your trusted partner in placements.
+            Master coding, aptitude, and reasoning with expert-curated content.
+          </p>
 
-        <div className="hero-buttons">
-          <button className="primary-btn">
-            Explore Courses →
-          </button>
-          <button className="secondary-btn"></button>
+          <div className="hero-buttons">
+            <button className="primary-btn">
+              Explore Courses →
+            </button>
+            <button className="secondary-btn">
+              Watch Demo
+            </button>
+          </div>
         </div>
-      </div>
 
-      <div className="hero-right">
-        <img
-          src="https://images.unsplash.com/photo-1551836022-d5d88e9218df"
-          alt="team"
-        />
+        {/* RIGHT IMAGE */}
+        <div className="hero-right">
+          <img
+            src="https://images.unsplash.com/photo-1551836022-d5d88e9218df"
+            alt="Students learning"
+            loading="lazy"
+          />
+        </div>
+
       </div>
     </section>
   );
