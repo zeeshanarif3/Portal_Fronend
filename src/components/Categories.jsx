@@ -65,8 +65,12 @@ function Categories() {
 
             <span className="get-started">Get Started →</span>
           </div>
+          
 
         </div>
+              <button className="explore-btn">
+          Explore More Tests
+        </button>
       </div>
     </section>
   );

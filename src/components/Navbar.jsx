@@ -27,13 +27,14 @@ function Navbar() {
           <a href="#">Courses</a>
           <a href="#">All Companies</a>
           <Link to="/dashboard/active">Active Courses</Link>
+            <a href="#">Campuses</a>
         </nav>
 
         {/* Right Side */}
         <div className="nav-right">
           <div className="cart-icon">
-            <FaShoppingCart />
-            <span className="cart-count">0</span>
+            {/* <FaShoppingCart />
+            <span className="cart-count">0</span> */}
           </div>
           <button className="signin-btn">Sign In</button>
         </div>

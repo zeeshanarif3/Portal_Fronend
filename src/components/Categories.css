@@ -139,3 +139,20 @@
     margin: 0 auto 20px auto;
   }
 }
+
+/* Explore Button */
+.explore-btn {
+  margin-top: 50px;
+  padding: 12px 28px;
+  border-radius: 8px;
+  border: 1px solid #d1d5db;
+  background: white;
+  cursor: pointer;
+  font-size: 15px;
+  font-weight: 500;
+  transition: 0.3s ease;
+}
+
+.explore-btn:hover {
+  background: #f8fafc;
+}
