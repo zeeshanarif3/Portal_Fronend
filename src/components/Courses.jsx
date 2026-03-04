@@ -4,50 +4,38 @@ import { FaStar, FaShoppingCart } from "react-icons/fa";
 
 const courses = [
   {
-    title: "Full Stack Web Development",
-    rating: "4.8",
-    students: "2.1k",
-    price: "4,999",
+    title: "TCS NQT",
+    price: "199",
     badge: "Bestseller",
     letter: "F",
   },
   {
-    title: "Data Structures & Algorithms",
-    rating: "4.9",
-    students: "3.4k",
-    price: "3,499",
+    title: "Accenture Mock",
+    price: "200",
     badge: "Trending",
     letter: "D",
   },
   {
-    title: "System Design Masterclass",
-    rating: "4.7",
-    students: "1.8k",
-    price: "5,999",
+    title: "Infosys Mock",
+    price: "149",
     badge: "",
     letter: "S",
   },
   {
-    title: "Aptitude & Reasoning Complete",
-    rating: "4.6",
-    students: "4.2k",
-    price: "1,999",
+    title: "Capgemini Mock",
+    price: "179",
     badge: "Popular",
     letter: "A",
   },
   {
-    title: "Python for Placements",
-    rating: "4.8",
-    students: "2.7k",
-    price: "2,499",
+    title: "SQL & Database Management",
+    price: "199",
     badge: "",
     letter: "P",
   },
   {
-    title: "SQL & Database Management",
-    rating: "4.5",
-    students: "1.5k",
-    price: "2,999",
+    title: "All MNSc Interview Series",
+    price: "99",
     badge: "",
     letter: "S",
   },
@@ -77,13 +65,13 @@ function Courses() {
               <div className="card-content">
                 <h3>{course.title}</h3>
 
-                <div className="rating">
+                {/* <div className="rating">
                   <FaStar className="star" />
                   <span>{course.rating}</span>
                   <span className="students">
                     • {course.students} students
                   </span>
-                </div>
+                </div> */}
 
                 <div className="price-row">
                   <h4>₹{course.price}</h4>
