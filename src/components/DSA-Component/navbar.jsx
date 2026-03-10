@@ -1,6 +1,8 @@
 import React, { useState } from "react";
-import "./Navbar.css";
-import { FaGraduationCap, FaBars, FaTimes } from "react-icons/fa";
+import "./navbar.css";
+// import { FaGraduationCap, FaBars, FaTimes } from "react-icons/fa";
+import { FaCode, FaTrophy, FaBars, FaTimes } from "react-icons/fa";
+
 import { Link } from "react-router-dom";
 
 function Navbar() {
@@ -11,10 +13,10 @@ function Navbar() {
       <div className="nav-container">
 
         {/* Logo */}
-        <Link to="/" className="logo">
-          <FaGraduationCap className="logo-icon" />
-          <span className="logo-text">Tech Mars</span>
-        </Link>
+      <div className="logo">
+    <FaCode /> DSA Mastery
+  </div>
+
 
         {/* Hamburger Icon */}
         <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
@@ -25,7 +27,7 @@ function Navbar() {
         <nav className={`nav-links ${menuOpen ? "active" : ""}`}>
 
           {/* Preparation Dropdown */}
-          <div className="dropdown">
+          {/* <div className="dropdown">
             <span className="dropdown-title">Preparation</span>
 
             <div className="dropdown-menu">
@@ -35,12 +37,12 @@ function Navbar() {
               <Link to="/prep/os">Operating System</Link>
               <Link to="/prep/aptitude">Aptitude</Link>
             </div>
-          </div>
+          </div> */}
 
-          <a href="#">Courses</a>
+          {/* <a href="#">Courses</a>
           <a href="#">All Companies</a>
           <Link to="/dashboard/active">Active Courses</Link>
-          <a href="#">Campuses</a>
+          <a href="#">Campuses</a> */}
 
         </nav>
 

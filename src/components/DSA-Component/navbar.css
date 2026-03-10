@@ -188,3 +188,23 @@
   }
 
 }
+
+.logo{
+  display:flex;
+  align-items:center;
+  justify-content:center;
+  gap:10px;
+
+  font-size:22px;     /* text size */
+  font-weight:800;    /* bold */
+  /* color:#111827; */
+   color: #1f2937;
+  font-family: 'Playfair Display', serif;
+
+  /* margin-bottom:30px; */
+}
+
+.logo svg{
+  font-size:30px;     /* icon size */
+  color:#ff5a1f;
+}

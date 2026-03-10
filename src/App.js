@@ -10,6 +10,8 @@ import StudentCourseLayout from "./components/StudentCourse_Dashboard/StudentCou
 import Quiz from "./components/StudentCourse_Dashboard/Quiz/Quiz";
 import PdfViewer from "./components/StudentCourse_Dashboard/PDFPage/Pdfviewers";
 import TableOfContent from "./components/StudentCourse_Dashboard/TableOfContent/tableofcontent";
+import Main from "./components/DSA-Component/main";
+import DSASheet from "./components/DSA-Component/DSASheet/DSASheet";
 
 import "./App.css"
 
@@ -22,6 +24,9 @@ function App() {
 
         {/* Landing Page */}
         <Route path="/" element={<HomeLandingPage />} />
+
+        <Route path="/prep/dsa" element={<Main />} />
+        <Route path="/prep/dsa/ques" element={<DSASheet />} />
 
         {/* Dashboard */}
         <Route path="/dashboard" element={<Layout />}>
